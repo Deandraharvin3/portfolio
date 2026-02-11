@@ -1,0 +1,159 @@
+/* =========================
+   PHD PORTFOLIO THEME
+   Soft Academic Palette
+   ========================= */
+
+/* --------- COLOR SYSTEM --------- */
+:root {
+  --bg-main: #F8F7F4;
+  --primary-navy: #1E2A38;
+  --accent-sage: #2E6F6D;
+  --accent-sage-dark: #255a58;
+  --accent-gold: #C6A75E;
+}
+
+/* --------- GLOBAL STYLES --------- */
+
+body {
+  background-color: var(--bg-main);
+  color: var(--primary-navy);
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Playfair Display', serif;
+  color: var(--primary-navy);
+}
+
+/* Smooth transitions */
+a, button {
+  transition: all 0.3s ease;
+}
+
+/* --------- NAVBAR --------- */
+
+.navbar {
+  background-color: var(--bg-main) !important;
+  border-bottom: 1px solid rgba(30, 42, 56, 0.08);
+}
+
+.navbar-brand {
+  font-family: 'Playfair Display', serif;
+  color: var(--primary-navy) !important;
+}
+
+.nav-link {
+  color: var(--primary-navy) !important;
+  font-weight: 500;
+  margin-left: 1rem;
+}
+
+.nav-link:hover {
+  color: var(--accent-sage) !important;
+}
+
+.nav-link.active {
+  border-bottom: 2px solid var(--accent-gold);
+}
+
+/* --------- HERO SECTION --------- */
+
+.hero {
+  padding: 100px 0;
+}
+
+.hero-subtitle {
+  color: var(--accent-sage);
+  font-weight: 500;
+}
+
+/* --------- BUTTONS --------- */
+
+/* Primary CTA (Sage) */
+.btn-primary {
+  background-color: var(--accent-sage) !important;
+  border: none !important;
+  border-radius: 10px;
+  padding: 10px 22px;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-sage-dark) !important;
+  transform: translateY(-2px);
+}
+
+/* Secondary Button (Navy Outline) */
+.btn-outline-primary {
+  border: 2px solid var(--primary-navy) !important;
+  color: var(--primary-navy) !important;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-navy) !important;
+  color: white !important;
+}
+
+/* Gold Accent Button (Use Sparingly) */
+.btn-gold {
+  background-color: var(--accent-gold);
+  color: var(--primary-navy);
+  border-radius: 8px;
+  font-weight: 600;
+  border: none;
+}
+
+/* --------- CARDS --------- */
+
+.card {
+  border: none;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(30, 42, 56, 0.06);
+}
+
+.card-title {
+  color: var(--primary-navy);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  transition: 0.3s ease;
+}
+
+/* Research Tags */
+.badge-sage {
+  background-color: rgba(46, 111, 109, 0.1);
+  color: var(--accent-sage);
+  font-weight: 500;
+}
+
+/* --------- SECTION DIVIDER --------- */
+
+.section-divider {
+  width: 60px;
+  height: 3px;
+  background-color: var(--accent-gold);
+  margin: 20px 0;
+}
+
+/* --------- LINKS --------- */
+
+a {
+  color: var(--accent-sage);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* --------- FOOTER --------- */
+
+.footer {
+  padding: 40px 0;
+  background-color: white;
+  border-top: 1px solid rgba(30, 42, 56, 0.08);
+  text-align: center;
+}
